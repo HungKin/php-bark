@@ -1,0 +1,13 @@
+{
+    "require": {
+        "inhere/sroute": "dev-master",
+        "catfan/medoo": "^1.6",
+        "pyyoshi/shortuuid-php": "^1.0",
+        "apple/apn-push": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "":""
+        }
+    }
+}
