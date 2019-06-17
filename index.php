@@ -93,6 +93,7 @@ function register()
 }
 function index(array $params) 
 {
+    $params = array_merge($_POST,$params);
     $key = $params['key'];
     $title = $params['title'] ?? '';
     $body = $params['body'] ?? '';
@@ -135,6 +136,7 @@ if ($firstTime) {
 $router = new Router();
 $router->map(['get', 'post'], '/ping', 'ping');
 $router->map(['get', 'post'], '/register', 'register');
+$router->map(['get', 'post'], '/{key}', 'index');
 $router->map(['get', 'post'], '/{key}/{body}', 'index');
 $router->map(['get', 'post'], '/{key}/{title}/{body}', 'index');
 // $router->map(['get', 'post'], '/{key}/{category}/{title}/{body}', 'index');
