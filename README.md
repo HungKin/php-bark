@@ -4,7 +4,7 @@ A php implementation of bark server https://github.com/Finb/bark-server
 Requirements
 ------------
 
-* [cURL](http://php.net/manual/ru/book.curl.php)
+* [cURL](https://php.net/manual/zh/book.curl.php)
 * The protocol [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) must be supported in cURL.
 * PHP 7.1 or higher
 
