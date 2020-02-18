@@ -11,7 +11,7 @@ use Apple\ApnPush\Exception\SendNotification\SendNotificationException;
 use Apple\ApnPush\Model\{Receiver, DeviceToken, Alert, Aps, Payload, Notification, Expiration, Priority, ApnId, CollapseId};
 
 define('DB_PATH', __DIR__ . '/bark.db');
-define('CERT_PATH', __DIR__ . '/cert-20200229.pem');
+define('CERT_PATH', __DIR__ . '/cert-20210125.pem');
 
 function responseString(int $code, string $message): string
 {
