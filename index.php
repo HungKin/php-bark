@@ -47,7 +47,7 @@ function push(string $category, string $title, string $body, string $deviceToken
     }
     $aps = (new Aps($alert))
         ->withBadge($params['badge'] ?? 0)
-        ->withSound('1107')
+        ->withSound($params['sound'] ? $params['sound'].'.caf' : '1107')
         ->withCategory('myNotificationCategory')
         ->withMutableContent(true);
     $payload = (new Payload($aps));
